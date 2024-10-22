@@ -11,9 +11,43 @@
 - Organizes the extracted content into a subfolder named after the webpage's domain.
 - Outputs a summary of file sizes, including the total size.
 
+## Using a Virtual Environment
+
+To ensure that dependencies are managed separately and to avoid conflicts, it is recommended to run this tool within a virtual environment.
+
+### Creating a Virtual Environment
+
+1. **Navigate to your project directory**:
+   ```bash
+   cd /path/to/your/project
+   ```
+
+2. **Create a virtual environment**:
+   ```bash
+   python -m venv venv
+   ```
+
+3. **Activate the virtual environment**:
+   - On Windows:
+     ```bash
+     venv\Scripts\activate
+     ```
+   - On macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+
+### Installing Dependencies
+
+Once the virtual environment is activated, install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Usage:
 1. Clone the repository.
-2. Install dependencies with `pip install -r requirements.txt`.
+2. Ensure the virtual environment is activated.
 3. Run the script and provide a webpage URL when prompted.
 
 Example:
